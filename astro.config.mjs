@@ -8,4 +8,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
   }
+  ,
+  site: 'https://github.com/Forever-twenty-nine',
+  base: '/landing-basic-template/',
 });
