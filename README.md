@@ -1,48 +1,90 @@
-# Astro Starter Kit: Basics
 
-```sh
-npm create astro@latest -- --template basics
+# 🚀 landing-basic-template
+
+Una plantilla moderna y minimalista para landing pages de negocios, construida con [Astro](https://astro.build) y [Tailwind CSS](https://tailwindcss.com). Ideal para freelancers, startups o pequeñas empresas que quieran destacar en línea.
+
+![Vista previa de la landing](https://via.placeholder.com/1200x600.png?text=Vista+previa+de+la+Landing) <!-- Puedes reemplazar esto con una screenshot real -->
+
+---
+
+## ✨ Características
+
+- ⚡️ Astro 5 con rendimiento optimizado
+- 🎨 Tailwind CSS para estilos rápidos y modernos
+- 🌐 Diseño responsive
+- 📄 Componentes organizados: `Header`, `Footer`, `Hero`, `About`, `Contact`
+- 🧱 Código modular, limpio y fácil de extender
+- 🧑‍💼 Enfocado en negocios y presentación profesional
+
+---
+
+## 📂 Estructura
+
+```bash
+src/
+├── components/
+│   ├── Header.astro
+│   └── Footer.astro
+├── sections/
+│   ├── Hero.astro
+│   ├── About.astro
+│   └── Contact.astro
+├── layouts/
+│   └── Layout.astro
+├── styles/
+│   └── global.css
+├── pages/
+│   └── index.astro
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Demo en vivo
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+👉 [Ver demo en GitHub Pages](https://tuusuario.github.io/landing-basic-template)
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠 Instalación local
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+# Clonar el repositorio
+git clone https://github.com/tuusuario/landing-basic-template.git
+
+# Entrar al proyecto
+cd landing-basic-template
+
+# Instalar dependencias
+npm install
+
+# Iniciar el servidor de desarrollo
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## 🧑‍💻 Despliegue en GitHub Pages
 
-All commands are run from the root of the project, from a terminal:
+Este proyecto incluye soporte para despliegue automático mediante GitHub Actions.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+1. Activa GitHub Pages en la rama `gh-pages`.
+2. Confirma que `astro.config.mjs` tiene `base: '/landing-basic-template/'`.
+3. ¡Listo! Cada push en `main` genera un nuevo deploy.
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📸 Capturas de pantalla
+
+> Aquí puedes agregar imágenes de cada sección si quieres mostrar el diseño visualmente.
+
+---
+
+## 📄 Licencia
+
+MIT — Puedes usarlo, modificarlo y compartirlo libremente.
+
+---
+
+## 💡 Créditos
+
+---
