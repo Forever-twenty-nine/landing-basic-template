@@ -1,17 +1,17 @@
 ---
 import Footer from "../components/Footer.astro";
+import Favicon from "../components/head/Favicon.astro";
+import Metadata from "../components/head/Metadata.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
+
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es" class="scroll-smooth" data-theme="light">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<Metadata/>
+		<Favicon/>
 	</head>
 	<body>
 		<Header />
