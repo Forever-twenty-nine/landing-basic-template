@@ -1,5 +1,4 @@
 ---
-import { config } from "../config";
 import Nav from "./Nav.astro";
 import Container from "./scaffolding/Container.astro";
 import Brand from "./ui/Brand.astro";
@@ -11,7 +10,15 @@ import Brand from "./ui/Brand.astro";
     <Container
         class="flex justify-between items-center">
 
-        <Brand />
+        <a 
+            href="#hero" 
+            class=""
+        >
+            <figure>
+                <Brand class="h-9 w-auto"/>
+            </figure>
+        </a>
+        
         <Nav />        
 
     </Container>
