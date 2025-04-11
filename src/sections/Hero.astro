@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import heroImg from "../assets/hero.jpg";
 import Section from "../components/scaffolding/Section.astro";
 import Container from "../components/scaffolding/Container.astro";
+import Button from "../components/ui/Button.astro";
 ---
 
 <Section
@@ -22,12 +23,10 @@ import Container from "../components/scaffolding/Container.astro";
                     Creamos sitios web modernos, rápidos y efectivos para
                     ayudarte a destacar en línea y atraer más clientes.
                 </p>
-                <a
-                    href="#contact"
-                    class="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-100 transition"
-                >
+                <Button
+                    href="#contact">
                     Contáctanos
-                </a>
+                </Button>
             </div>
 
             <!-- Imagen -->

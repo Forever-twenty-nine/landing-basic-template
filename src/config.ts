@@ -7,6 +7,7 @@ export interface SiteConfig {
     siteDescription: string;
     siteUrl: string;
     favicon: string;
+    mailto: string;
     social: {
         instagram?: string;
     }
@@ -21,6 +22,7 @@ export const config: SiteConfig = {
     siteDescription: 'The company sells a lot of things ',
     siteUrl: 'https://wwww.namecompany.com/',
     favicon: '/favicon.svg',
+    mailto: 'mailto:contacto@company.com',
     social: {
         instagram: 'lkajsdfjh'
     },
