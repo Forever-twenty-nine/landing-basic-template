@@ -1,4 +1,5 @@
 ---
+import { config } from "../config";
 import Container from "./scaffolding/Container.astro";
 ---
 
@@ -11,7 +12,9 @@ import Container from "./scaffolding/Container.astro";
 
         <!-- Logo -->
         <a href="/" class="text-2xl font-bold text-blue-600 tracking-tight"
-            >NegocioX</a
+        >
+            {config.site}
+        </a
         >
 
         <!-- Navegación -->
