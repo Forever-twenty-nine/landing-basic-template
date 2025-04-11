@@ -1,5 +1,14 @@
-<header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+---
+import Container from "./scaffolding/Container.astro";
+---
+
+<header
+    class="fixed top-0 left-0 w-full z-50 bg-white shadow-md"
+>
+    <Container
+        class="flex justify-between items-center"
+    >
+
         <!-- Logo -->
         <a href="/" class="text-2xl font-bold text-blue-600 tracking-tight"
             >NegocioX</a
@@ -17,7 +26,8 @@
                 class="text-gray-700 hover:text-blue-600 transition">Contacto</a
             >
         </nav>
-    </div>
+
+    </Container>
 </header>
 
 <!-- Espacio para compensar header fijo -->
