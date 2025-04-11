@@ -1,6 +1,7 @@
 ---
 import Container from "../components/scaffolding/Container.astro";
 import Section from "../components/scaffolding/Section.astro";
+import Typography from "../components/ui/Typography.astro";
 ---
 
 <Section
@@ -23,25 +24,29 @@ import Section from "../components/scaffolding/Section.astro";
 
         <!-- Texto -->
         <div class="md:w-1/2 text-center md:text-left">
-            <span
-                class="inline-block text-sm uppercase tracking-wide text-blue-600 font-semibold mb-2"
-            >
+            <Typography
+                tag="small"
+                class=" uppercase text-blue-600 tracking-widest font-bold mb-2">
                 Sobre Nosotros
-            </span>
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            </Typography>
+            <Typography
+                tag="h2"
+                class="mb-6">
                 Construimos soluciones digitales que impulsan tu crecimiento
-            </h2>
-            <p class="text-gray-600 mb-6">
+            </Typography>
+            <Typography
+                class="mb-4 text-gray-600">
                 En <strong>NegocioX</strong> combinamos diseño atractivo, estrategia
                 y tecnología para ayudarte a tener una presencia en línea fuerte
                 y profesional. Desde sitios web hasta tiendas online, trabajamos
                 codo a codo contigo para lograr resultados reales.
-            </p>
-            <p class="text-gray-600">
+            </Typography>
+            <Typography
+                class="text-gray-600">
                 Nuestro equipo está formado por diseñadores, desarrolladores y
                 estrategas con experiencia. Ya hemos trabajado con más de 50
                 clientes satisfechos en distintos sectores.
-            </p>
+            </Typography>
         </div>
 
 

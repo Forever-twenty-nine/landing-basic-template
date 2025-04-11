@@ -4,6 +4,7 @@ import heroImg from "../assets/hero.jpg";
 import Section from "../components/scaffolding/Section.astro";
 import Container from "../components/scaffolding/Container.astro";
 import Button from "../components/ui/Button.astro";
+import Typography from "../components/ui/Typography.astro";
 ---
 
 <Section
@@ -17,13 +18,17 @@ import Button from "../components/ui/Button.astro";
         >
             <!-- Texto -->
             <div class="md:w-1/2 text-center md:text-left">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                <Typography 
+                    tag="h1"
+                    class="mb-6">
                     Impulsa tu negocio con presencia digital profesional
-                </h1>
-                <p class="text-lg mb-8">
+                </Typography>
+
+                <Typography
+                    class="mb-8">
                     Creamos sitios web modernos, rápidos y efectivos para
                     ayudarte a destacar en línea y atraer más clientes.
-                </p>
+                </Typography>
                 <Button
                     href="#contact">
                     Contáctanos

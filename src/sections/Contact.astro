@@ -3,6 +3,7 @@ import Section from "../components/scaffolding/Section.astro";
 import Container from "../components/scaffolding/Container.astro";
 import Button from "../components/ui/Button.astro";
 import { config } from "../config";
+import Typography from "../components/ui/Typography.astro";
 ---
 
 <Section
@@ -21,19 +22,22 @@ import { config } from "../config";
     </div>
 
     <Container
-        class="relative text-center"
-    >
+        class="relative text-center">
 
-        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        <Typography
+            tag="h2"
+            class="mb-6">
             ¿Listo para llevar tu negocio al siguiente nivel?
-        </h2>
-        <p class="text-lg mb-8 max-w-2xl mx-auto">
+        </Typography>
+        <Typography
+            class="mb-6">
             Ponte en contacto con nosotros hoy mismo. Estamos listos para
             ayudarte a crear una presencia digital profesional y efectiva.
-        </p>
+        </Typography>
         <Button
             href={config.mailto}>
             Escríbenos
         </Button>
+        
     </Container>
 </Section>

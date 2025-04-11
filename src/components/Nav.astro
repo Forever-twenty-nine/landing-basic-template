@@ -10,6 +10,10 @@ const links = [
     { text: 'Contacto', href:'#contact' }
 ]
 
+const {
+    class: className = ''
+} = Astro.props
+
 ---
 
 <nav 
@@ -21,7 +25,7 @@ const links = [
                 <li>
                     <a
                         href={link.href}
-                        class=" text-base text-gray-700 px-3 py-2 mx-1 block transition duration-200 hover:text-blue-600 lg:text-base "
+                        class={` text-base font-normal text-gray-700 px-3 py-2 mx-1 block transition duration-200 hover:text-blue-600 lg:text-base ${className}`}
                     >
                         {link.text}
                     </a>
