@@ -4,22 +4,13 @@ import Container from "./scaffolding/Container.astro";
 import Brand from "./ui/Brand.astro";
 ---
 
-<header
-    class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-2"
->
-    <Container
-        class="flex justify-between items-center">
-
-        <a 
-            href="#hero" 
-            class=""
-        >
+<header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-2">
+    <Container class="flex justify-between items-center">
+        <a href="#hero" class="">
             <figure>
-                <Brand class="h-9 w-auto"/>
+                <Brand class="h-9 w-auto" />
             </figure>
         </a>
-        
-        <Nav />        
-
+        <Nav />
     </Container>
 </header>

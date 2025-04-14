@@ -1,25 +1,21 @@
 ---
-
 interface Link {
     href: string;
     text: string;
 }
 
 const links = [
-    { text: 'Sobre Nosotros', href:'#about' },
-    { text: 'Contacto', href:'#contact' }
-]
+    { text: "Sobre Nosotros", href: "#about" },
+    { text: "Contacto", href: "#contact" },
+];
 
-const {
-    class: className = ''
-} = Astro.props
-
+const { class: className = "" } = Astro.props;
 ---
 
-<nav 
-    class="space-x-6 text-sm font-medium">
-    <ul 
-        class="flex lg:flex-row lg:bg-transparent w-full lg:w-auto z-20 lg:z-auto p-4 lg:p-0  lg:gap-0 transition-all duration-300">
+<nav class="space-x-6 text-sm font-medium">
+    <ul
+        class="flex lg:flex-row lg:bg-transparent w-full lg:w-auto z-20 lg:z-auto p-4 lg:p-0 lg:gap-0 transition-all duration-300"
+    >
         {
             links.map((link: Link) => (
                 <li>
@@ -33,5 +29,4 @@ const {
             ))
         }
     </ul>
-
 </nav>
