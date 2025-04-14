@@ -1,5 +1,6 @@
 ---
 import Nav from "./Nav.astro";
+import NavLinks from "astro-ui-lib/NavLinks";
 import Container from "./scaffolding/Container.astro";
 import Brand from "./ui/Brand.astro";
 ---
@@ -11,6 +12,11 @@ import Brand from "./ui/Brand.astro";
                 <Brand class="h-9 w-auto" />
             </figure>
         </a>
-        <Nav />
+        <NavLinks
+            links={[
+                { href: "#about", text: "Sobre Nosotros" },
+                { href: "#contact", text: "Contacto" },
+            ]}
+        />
     </Container>
 </header>
