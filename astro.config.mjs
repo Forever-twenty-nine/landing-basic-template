@@ -12,3 +12,4 @@ export default defineConfig({
   site: 'https://github.com/Forever-twenty-nine',
   base: '/landing-basic-template/',
 });
+
