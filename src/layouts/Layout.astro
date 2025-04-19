@@ -5,6 +5,7 @@ import Metadata from "astro-ui-lib/Metadata";
 import Header from "../components/Header.astro";
 import "astro-ui-lib/Style"
 import "../styles/global.css";
+import {config} from "../config";
 
 ---
 
@@ -12,7 +13,7 @@ import "../styles/global.css";
 <html lang="es" class="scroll-smooth" data-theme="light">
 	<head>
 		<Metadata/>
-		<Favicon/>
+		<Favicon favicon={config.favicon}/>
 	</head>
 	<body>
 		<Header />

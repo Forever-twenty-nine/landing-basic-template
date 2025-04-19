@@ -23,7 +23,7 @@ export const config: SiteConfig = {
     siteTitle: 'Landing page for startups',
     siteDescription: 'The company sells a lot of things ',
     siteUrl: 'https://wwww.namecompany.com/',
-    favicon: '/favicon.svg',
+    favicon: 'images/favicon.svg',
     brandSrc: 'src/assets/brand.svg',
     brandAlt: 'Logo de NameCompany',
     mailto: 'mailto:contacto@company.com',
