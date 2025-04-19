@@ -1,21 +1,27 @@
 ---
+import { config } from "../config";
 import Nav from "astro-ui-lib/Nav";
 import Container from "astro-ui-lib/Container";
-import Brand from "astro-ui-lib/Brand";
+import BrandLink from "astro-ui-lib/BrandLink";
+import HeaderFixed from "astro-ui-lib/HeaderFixed";
 ---
 
-<header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md py-2">
-    <Container class="flex justify-between items-center">
-        <a href="#hero" class="">
-            <figure>
-                <Brand class="h-9 w-auto" />
-            </figure>
-        </a>
-        <Nav
-            links={[
-                { href: "#about", text: "Sobre Nosotros" },
-                { href: "#contact", text: "Contacto" },
-            ]}
-        />
-    </Container>
-</header>
+
+<HeaderFixed
+  id="main-header"
+  class="bg-white"
+
+  navLinks={[
+    { href: "#about", text: "Sobre Nosotros" },
+    { href: "#contact", text: "Contacto" }
+  ]}
+  
+  brand={{
+    href: "#hero",
+    id: "brand-logo",
+    class: "hover:opacity-80",
+    src: config.brandSrc,
+    alt: config.brandAlt,
+    classImage: "h-10 w-auto"
+  }}
+/>
