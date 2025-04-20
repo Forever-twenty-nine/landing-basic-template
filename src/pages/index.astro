@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import About from "../sections/About.astro";
 import Contact from "../sections/Contact.astro";
 import Hero1 from "astro-ui-lib/Hero1";
+import About1 from "astro-ui-lib/About1";
 
 import {config} from "../config";
 import Footer from "src/components/Footer.astro";
@@ -15,6 +16,7 @@ import Footer from "src/components/Footer.astro";
 	<HeaderFixed
 		id="main-header"
 		class="bg-white"
+
 		navLinks={[
 			{ href: "#about", text: "Sobre Nosotros" },
 			{ href: "#contact", text: "Contacto" }
@@ -47,7 +49,41 @@ import Footer from "src/components/Footer.astro";
 		imageSrc="../src/assets/hero.jpg"
 	/> 
 
-	<About />
+	<About1
+		sectionId="about"
+		sectionClass=""
+		containerId=""
+		containerClass=""
+
+		tagTitle="Sobre nosotros"
+		tagClass=""
+
+		title="Construimos soluciones digitales que impulsan tu crecimiento"
+		titleClass=""
+
+		imageSrc="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80"
+		imageAlt="Equipo trabajando"
+		imageClass=""
+
+		paragraphs={[
+			{
+				content: "En <strong>NegocioX</strong> combinamos diseño atractivo, estrategia y tecnología para ayudarte a tener una presencia en línea fuerte y profesional. Desde sitios web hasta tiendas online, trabajamos codo a codo contigo para lograr resultados reales."
+			},
+			{
+				content:
+					"Nuestro equipo está formado por diseñadores, desarrolladores y estrategas con experiencia.",
+				class: "",
+			},
+			{
+				class: "text-accent-600 font-bold",
+				content: "Ya hemos trabajado con más de 50 clientes satisfechos.",
+			},
+		]}
+
+
+	/>
+
+	
 	<Contact />
 	<Footer/>
 </Layout>
