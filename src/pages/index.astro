@@ -1,12 +1,36 @@
 ---
+import HeaderFixed from "astro-ui-lib/HeaderFixed";
 import Layout from "../layouts/Layout.astro";
 import About from "../sections/About.astro";
 import Contact from "../sections/Contact.astro";
 import Hero from "../sections/Hero.astro";
+
+import {config} from "../config";
+import Footer from "src/components/Footer.astro";
+
 ---
 
 <Layout>
+
+	<HeaderFixed
+		id="main-header"
+		class="bg-white"
+		navLinks={[
+			{ href: "#about", text: "Sobre Nosotros" },
+			{ href: "#contact", text: "Contacto" }
+		]}
+		brand={{
+			href: "#hero",
+			id: "brand-logo",
+			class: "hover:opacity-80",
+			src: config.brandSrc,
+			alt: config.brandAlt,
+			classImage: "h-10 w-auto"
+		}}
+	/>	
+
 	<Hero />
 	<About />
 	<Contact />
+	<Footer/>
 </Layout>
