@@ -1,12 +1,14 @@
 ---
-import HeaderFixed from "astro-ui-lib/HeaderFixed";
 import Layout from "../layouts/Layout.astro";
+
+import HeaderFixed from "astro-ui-lib/HeaderFixed";
+import Footer from "astro-ui-lib/Footer";
+
 import Hero1 from "astro-ui-lib/Hero1";
 import About1 from "astro-ui-lib/About1";
 import Banner1 from "astro-ui-lib/Banner1";
 
 import {config} from "../config";
-import Footer from "src/components/Footer.astro";
 
 ---
 
@@ -24,7 +26,7 @@ import Footer from "src/components/Footer.astro";
 			href: "#hero",
 			id: "brand-logo",
 			class: "hover:opacity-80",
-			src: config.brandSrc,
+			src: config.brandHeaderSrc,
 			alt: config.brandAlt,
 			classImage: "h-10 w-auto"
 		}}
@@ -98,7 +100,13 @@ import Footer from "src/components/Footer.astro";
 		buttonHref= {config.mailto}
 		buttonText="Escríbenos"
 	/>
-
 	
-	<Footer/>
+	<Footer
+		imageSrc={config.brandFooterSrc}
+		legend={config.siteLegend}
+		
+		copyright="© {new Date().getFullYear()} {config.site}. Todos los derechos reservados."
+		author="Creado por {config.author}"
+	/>
+
 </Layout>
