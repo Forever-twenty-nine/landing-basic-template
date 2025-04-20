@@ -7,7 +7,8 @@ export interface SiteConfig {
     description: string;
     url: string;
     favicon: string;
-    brandSrc: string;
+    brandHeaderSrc: string;
+    brandFooterSrc: string;
     brandAlt: string;
     mailto: string;
     social: {
@@ -31,7 +32,8 @@ export const config: SiteConfig = {
     description: 'The company sells a lot of things ',
     url: 'https://wwww.namecompany.com/',
     favicon: 'images/favicon.svg',
-    brandSrc: 'src/assets/brand.svg',
+    brandHeaderSrc: 'src/assets/brand.svg',
+    brandFooterSrc: 'src/assets/brand-negative.svg',
     brandAlt: 'Logo de NameCompany',
     mailto: 'mailto:contacto@company.com',
     social: {
