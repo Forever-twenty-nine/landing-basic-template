@@ -1,10 +1,9 @@
 ---
 import HeaderFixed from "astro-ui-lib/HeaderFixed";
 import Layout from "../layouts/Layout.astro";
-import About from "../sections/About.astro";
-import Contact from "../sections/Contact.astro";
 import Hero1 from "astro-ui-lib/Hero1";
 import About1 from "astro-ui-lib/About1";
+import Banner1 from "astro-ui-lib/Banner1";
 
 import {config} from "../config";
 import Footer from "src/components/Footer.astro";
@@ -43,6 +42,7 @@ import Footer from "src/components/Footer.astro";
 		description="Creamos sitios web modernos, rápidos y efectivos para ayudarte a destacar en línea y atraer más clientes."
 		descriptionClass=""
 
+		buttonType="solid"
 		buttonHref="#contact"
 		buttonText="Contáctanos"
 		
@@ -80,10 +80,25 @@ import Footer from "src/components/Footer.astro";
 			},
 		]}
 
+	/>
 
+	<Banner1
+		sectionId=""
+		sectionClass=""
+		containerId=""
+		containerClass=""
+
+		title="¿Listo para llevar tu negocio al siguiente nivel?"
+		titleClass=""
+
+		description="Ponte en contacto con nosotros hoy mismo. Estamos listos para ayudarte a <strong>crear una presencia digital profesional y efectiva.</strong>"
+		descriptionClass=""
+
+		buttonType="inverted"
+		buttonHref= {config.mailto}
+		buttonText="Escríbenos"
 	/>
 
 	
-	<Contact />
 	<Footer/>
 </Layout>
