@@ -3,7 +3,7 @@ import HeaderFixed from "astro-ui-lib/HeaderFixed";
 import Layout from "../layouts/Layout.astro";
 import About from "../sections/About.astro";
 import Contact from "../sections/Contact.astro";
-import Hero from "../sections/Hero.astro";
+import Hero1 from "astro-ui-lib/Hero1";
 
 import {config} from "../config";
 import Footer from "src/components/Footer.astro";
@@ -29,7 +29,24 @@ import Footer from "src/components/Footer.astro";
 		}}
 	/>	
 
-	<Hero />
+	<Hero1
+		sectionId="hero"
+		sectionClass="pt-24"
+		containerId=""
+		containerClass=""
+
+		title="Impulsa tu negocio con presencia digital profesional"
+		titleClass=""
+		
+		description="Creamos sitios web modernos, rápidos y efectivos para ayudarte a destacar en línea y atraer más clientes."
+		descriptionClass=""
+
+		buttonHref="#contact"
+		buttonText="Contáctanos"
+		
+		imageSrc="../src/assets/hero.jpg"
+	/> 
+
 	<About />
 	<Contact />
 	<Footer/>
