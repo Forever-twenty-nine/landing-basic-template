@@ -1,11 +1,11 @@
 export interface SiteConfig {
-    autor: string;
-    autorUrl: string;
+    author: string;
+    authorUrl: string;
     site: string;
     siteLegend: string;
-    siteTitle: string;
-    siteDescription: string;
-    siteUrl: string;
+    title: string;
+    description: string;
+    url: string;
     favicon: string;
     brandSrc: string;
     brandAlt: string;
@@ -13,16 +13,23 @@ export interface SiteConfig {
     social: {
         instagram?: string;
     }
+    colors: {
+        primary: string;
+        secondary: string;
+        accent: string;
+        background: string;
+        text: string;
+    };
 }
 
 export const config: SiteConfig = {
-    autor: 'FTN Agency',
-    autorUrl: 'https://wwww.ftn.com',
-    site: 'Company name',
+    author: 'FTN Agency',
+    authorUrl: 'https://wwww.ftn.com',
+    site: 'Name Company',
     siteLegend: 'Digital solutions for entrepreneurs and modern businesses.',
-    siteTitle: 'Landing page for startups',
-    siteDescription: 'The company sells a lot of things ',
-    siteUrl: 'https://wwww.namecompany.com/',
+    title: 'Title Page',
+    description: 'The company sells a lot of things ',
+    url: 'https://wwww.namecompany.com/',
     favicon: 'images/favicon.svg',
     brandSrc: 'src/assets/brand.svg',
     brandAlt: 'Logo de NameCompany',
@@ -30,4 +37,11 @@ export const config: SiteConfig = {
     social: {
         instagram: 'lkajsdfjh'
     },
+    colors: {
+        primary: '#1E40AF',
+        secondary: '#F59E0B',
+        accent: '#10B981',
+        background: '#F9FAFB',
+        text: '#111827'
+    }
 }

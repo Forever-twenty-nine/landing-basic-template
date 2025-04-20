@@ -1,5 +1,7 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 import { join } from 'path'
+
+import { config as siteConfig } from './src/config';
 
 const config: Config = {
   content: [
@@ -13,7 +15,15 @@ const config: Config = {
     join(__dirname, '../astro-ui-lib/components/**/*.{astro,js,ts,jsx,tsx}')
   ],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        primary: siteConfig.colors.primary,
+        secondary: siteConfig.colors.secondary,
+        accent: siteConfig.colors.accent,
+        background: siteConfig.colors.background,
+        text: siteConfig.colors.text
+      }
+    }
   },
   plugins: []
 }

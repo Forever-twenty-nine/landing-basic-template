@@ -2,7 +2,7 @@
 import Footer from "../components/Footer.astro";
 import Favicon from "astro-ui-lib/Favicon";
 import Metadata from "astro-ui-lib/Metadata";
-import Header from "../components/Header.astro";
+
 import "astro-ui-lib/Style"
 import "../styles/global.css";
 import {config} from "../config";
@@ -12,12 +12,20 @@ import {config} from "../config";
 <!doctype html>
 <html lang="es" class="scroll-smooth" data-theme="light">
 	<head>
-		<Metadata/>
-		<Favicon favicon={config.favicon}/>
+		<Metadata
+			site={config.site}
+			title={config.title}
+			description={config.description}
+			author={config.author}
+			url={config.url}
+		/>
+		<Favicon 
+			favicon={config.favicon}
+		/>
 	</head>
+	
 	<body>
-		<Header />
+		{/* Content: pages > index.astro */}
 		<slot />
-		<Footer />
 	</body>
 </html>
