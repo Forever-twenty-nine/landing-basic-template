@@ -12,7 +12,8 @@ const config: Config = {
     // './node_modules/astro-ui-lib/**/*.{astro,js,ts,jsx,tsx}',
     
     // O si está en forma de folder (desarrollo local con pnpm/yarn/npm link)
-    join(__dirname, '../astro-ui-lib/components/**/*.{astro,js,ts,jsx,tsx}')
+    join(__dirname, '../astro-ui-lib/components/**/*.{astro,js,ts,jsx,tsx}'),
+    './src/styles/**/*.{css}'
   ],
   theme: {
     extend: {
