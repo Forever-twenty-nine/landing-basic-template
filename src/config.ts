@@ -32,8 +32,8 @@ export const config: SiteConfig = {
     description: 'The company sells a lot of things ',
     url: 'https://wwww.namecompany.com/',
     favicon: 'images/favicon.svg',
-    brandHeaderSrc: 'src/assets/brand.svg',
-    brandFooterSrc: 'src/assets/brand-negative.svg',
+    brandHeaderSrc: 'images/brand.svg',
+    brandFooterSrc: 'images/brand-negative.svg',
     brandAlt: 'Logo de NameCompany',
     mailto: 'mailto:contacto@company.com',
     social: {
