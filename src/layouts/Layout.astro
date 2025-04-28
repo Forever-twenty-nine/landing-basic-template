@@ -1,8 +1,7 @@
 ---
-import Favicon from "astro-ui-lib/Favicon";
-import Metadata from "astro-ui-lib/Metadata";
+import { Favicon, Metadata } from "@forever-twenty-nine/astro-ui-lib";
 import "../styles/global.css";
-import {config} from "../config";
+import { config } from "../config";
 ---
 
 <!doctype html>
@@ -15,11 +14,9 @@ import {config} from "../config";
 			author={config.author}
 			url={config.url}
 		/>
-		<Favicon 
-			favicon={config.favicon}
-		/>
+		<Favicon favicon={config.favicon} />
 	</head>
-	
+
 	<body>
 		{/* Content: pages > index.astro */}
 		<slot />
