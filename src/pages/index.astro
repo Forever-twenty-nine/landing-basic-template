@@ -9,6 +9,7 @@ import {
 	Banner1,
 	Footer,
 	Hero1,
+	Typography,
 } from "@forever-twenty-nine/astro-ui-lib";
 
 import { config } from "../config";
@@ -18,7 +19,8 @@ import { config } from "../config";
 	<HeaderFixed
 		id="main-header"
 		class="bg-white"
-		navLinks={[
+		links={[
+			// ✅ correcto
 			{ href: "#about", text: "Sobre Nosotros" },
 			{ href: "#contact", text: "Contacto" },
 		]}
@@ -46,6 +48,7 @@ import { config } from "../config";
 		buttonText="Contáctanos"
 		imageSrc="images/hero.jpg"
 	/>
+
 
 	<About1
 		sectionId="about"
@@ -94,7 +97,7 @@ import { config } from "../config";
 	<Footer
 		imageSrc={config.brandFooterSrc}
 		legend={config.siteLegend}
-		copyright="© {new Date().getFullYear()} {config.site}. Todos los derechos reservados."
-		author="Creado por {config.author}"
+		copyright={`© ${new Date().getFullYear()} ${config.site}. Todos los derechos reservados.`}
+		author={`Creado por ${config.author}`}
 	/>
 </Layout>

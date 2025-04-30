@@ -3,9 +3,10 @@ import { config as siteConfig } from './src/config';
 
 const config: Config = {
   content: [
-    './src/**/*.{astro,html,js,jsx,ts,tsx,mdx}', // Archivos dentro de src
-    './src/styles/**/*.{css}', // Archivos CSS dentro de src
-    './node_modules/@forever-twenty-nine/astro-ui-lib/components/**/*.{astro}',// Archivos de la librería
+    './src/**/*.{astro,html,js,jsx,ts,tsx,mdx}', 
+    './src/styles/**/*.{css}', 
+    './node_modules/@forever-twenty-nine/astro-ui-lib/**/*.{astro,js,ts,jsx,tsx}',
+    
   ],
   theme: {
     extend: {
