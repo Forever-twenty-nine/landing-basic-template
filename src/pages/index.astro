@@ -1,78 +1,41 @@
 ---
 import Layout from "../layouts/Layout.astro";
-
-import "../styles/global.css";
-
-import {
-	HeaderFixed,
-	About1,
-	Banner1,
-	Footer,
-	Hero1,
-	Typography,
-} from "@forever-twenty-nine/astro-ui-lib";
-
+import { Hero1, About1, Banner1 } from "@forever-twenty-nine/astro-ui-lib";
 import { config } from "../config";
+import "../styles/global.css";
 ---
 
 <Layout>
-	<HeaderFixed
-		id="main-header"
-		class="bg-white"
-		links={[
-			// ✅ correcto
-			{ href: "#about", text: "Sobre Nosotros" },
-			{ href: "#contact", text: "Contacto" },
-		]}
-		brand={{
-			href: "#hero",
-			id: "brand-logo",
-			class: "hover:opacity-80",
-			src: config.brandHeaderSrc,
-			alt: config.brandAlt,
-			classImage: "h-10 w-auto",
-		}}
-	/>
-
 	<Hero1
 		sectionId="hero"
 		sectionClass="pt-24"
-		containerId=""
-		containerClass=""
 		title="Impulsa tu negocio con presencia digital profesional"
-		titleClass=""
 		description="Creamos sitios web modernos, rápidos y efectivos para ayudarte a destacar en línea y atraer más clientes."
-		descriptionClass=""
 		buttonType="solid"
 		buttonHref="#contact"
 		buttonText="Contáctanos"
 		imageSrc="images/hero.jpg"
 	/>
 
-
 	<About1
 		sectionId="about"
-		sectionClass=""
-		containerId=""
-		containerClass=""
 		tagTitle="Sobre nosotros"
-		tagClass=""
 		title="Construimos soluciones digitales que impulsan tu crecimiento"
-		titleClass=""
 		imageSrc="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80"
 		imageAlt="Equipo trabajando"
-		imageClass=""
 		paragraphs={[
 			{
+				tag: "p",
 				content:
 					"En <strong>NegocioX</strong> combinamos diseño atractivo, estrategia y tecnología para ayudarte a tener una presencia en línea fuerte y profesional. Desde sitios web hasta tiendas online, trabajamos codo a codo contigo para lograr resultados reales.",
 			},
 			{
+				tag: "p",
 				content:
 					"Nuestro equipo está formado por diseñadores, desarrolladores y estrategas con experiencia.",
-				class: "",
 			},
 			{
+				tag: "p",
 				class: "text-accent-600 font-bold",
 				content:
 					"Ya hemos trabajado con más de 50 clientes satisfechos.",
@@ -81,23 +44,10 @@ import { config } from "../config";
 	/>
 
 	<Banner1
-		sectionId=""
-		sectionClass=""
-		containerId=""
-		containerClass=""
 		title="¿Listo para llevar tu negocio al siguiente nivel?"
-		titleClass=""
 		description="Ponte en contacto con nosotros hoy mismo. Estamos listos para ayudarte a <strong>crear una presencia digital profesional y efectiva.</strong>"
-		descriptionClass=""
-		buttonType="inverted"
+		buttonType="button"
 		buttonHref={config.mailto}
 		buttonText="Escríbenos"
-	/>
-
-	<Footer
-		imageSrc={config.brandFooterSrc}
-		legend={config.siteLegend}
-		copyright={`© ${new Date().getFullYear()} ${config.site}. Todos los derechos reservados.`}
-		author={`Creado por ${config.author}`}
 	/>
 </Layout>

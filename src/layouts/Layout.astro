@@ -1,11 +1,28 @@
 ---
-import { Favicon, Metadata } from "@forever-twenty-nine/astro-ui-lib";
+import {
+	Favicon,
+	Metadata,
+	HeaderFixed,
+	Footer,
+} from "@forever-twenty-nine/astro-ui-lib";
 import "../styles/global.css";
 import { config } from "../config";
+
+const navLinks = [
+	{ href: "#about", text: "Sobre Nosotros" },
+	{ href: "#contact", text: "Contacto" },
+];
+
+const brandData = {
+	href: "#hero",
+	class: "hover:opacity-80",
+	src: config.brandHeaderSrc,
+	alt: config.brandAlt,
+	classImage: "h-10 w-auto",
+};
 ---
 
 <!doctype html>
-<html lang="es" class="scroll-smooth" data-theme="light">
 <html lang="es" class="scroll-smooth" data-theme="light">
 	<head>
 		<Metadata
@@ -19,8 +36,22 @@ import { config } from "../config";
 	</head>
 
 	<body>
-		{/* Content: pages > index.astro */}
-		{/* Content: pages > index.astro */}
-		<slot />
+		<HeaderFixed
+			links={navLinks}
+			brand={brandData}
+			navVariant="default"
+			containerVariant="default"
+		/>
+
+		<main class="pt-20">
+			<slot />
+		</main>
+
+		<Footer
+			imageSrc={config.brandFooterSrc}
+			legend={config.siteLegend}
+			copyright={`© ${new Date().getFullYear()} ${config.site}. Todos los derechos reservados.`}
+			author={`Creado por ${config.author}`}
+		/>
 	</body>
 </html>

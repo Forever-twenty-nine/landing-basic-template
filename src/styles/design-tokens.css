@@ -1,6 +1,5 @@
-/* ONLY the librery tokens to be stepped on */
-
-@theme{
-    --color-secondary-700: red; 
-
+/* stylelint-disable-next-line unknown-at-rules */
+@theme {
+    --color-secondary-700: red;
 }
+  
