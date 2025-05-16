@@ -1,53 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Hero1, About1, Banner1 } from "@forever-twenty-nine/astro-ui-lib";
-import { config } from "../config";
 import "../styles/global.css";
 ---
 
 <Layout>
-	<Hero1
-		sectionId="hero"
-		sectionClass="pt-24"
-		title="Impulsa tu negocio con presencia digital profesional"
-		description="Creamos sitios web modernos, rápidos y efectivos para ayudarte a destacar en línea y atraer más clientes."
-		buttonType="solid"
-		buttonHref="#contact"
-		buttonText="Contáctanos"
-		imageSrc="images/hero.jpg"
-	/>
 
-	<About1
-		sectionId="about"
-		tagTitle="Sobre nosotros"
-		title="Construimos soluciones digitales que impulsan tu crecimiento"
-		imageSrc="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80"
-		imageAlt="Equipo trabajando"
-		paragraphs={[
-			{
-				tag: "p",
-				content:
-					"En <strong>NegocioX</strong> combinamos diseño atractivo, estrategia y tecnología para ayudarte a tener una presencia en línea fuerte y profesional. Desde sitios web hasta tiendas online, trabajamos codo a codo contigo para lograr resultados reales.",
-			},
-			{
-				tag: "p",
-				content:
-					"Nuestro equipo está formado por diseñadores, desarrolladores y estrategas con experiencia.",
-			},
-			{
-				tag: "p",
-				class: "text-accent-600 font-bold",
-				content:
-					"Ya hemos trabajado con más de 50 clientes satisfechos.",
-			},
-		]}
-	/>
+	<Hero1 />
 
-	<Banner1
-		title="¿Listo para llevar tu negocio al siguiente nivel?"
-		description="Ponte en contacto con nosotros hoy mismo. Estamos listos para ayudarte a <strong>crear una presencia digital profesional y efectiva.</strong>"
-		buttonType="button"
-		buttonHref={config.mailto}
-		buttonText="Escríbenos"
-	/>
+	<About1 />
+
+	<Banner1 />
+
 </Layout>

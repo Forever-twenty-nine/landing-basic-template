@@ -1,4 +1,4 @@
-@import "../../node_modules/@forever-twenty-nine/astro-ui-lib/dist/components/styles/design-tokens.css";
+@import "../../node_modules/@forever-twenty-nine/astro-ui-lib/dist/styles/design-tokens.css";
 @import "./design-tokens.css";
 @import "tailwindcss";
 @source "../../node_modules/@forever-twenty-nine/astro-ui-lib";

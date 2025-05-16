@@ -8,17 +8,20 @@ import {
 import "../styles/global.css";
 import { config } from "../config";
 
+import Logo from "../assets/brand.svg";
+import LogoFooter from "../assets/brand-negative.svg";
+
 const navLinks = [
 	{ href: "#about", text: "Sobre Nosotros" },
 	{ href: "#contact", text: "Contacto" },
 ];
 
 const brandData = {
-	href: "#hero",
-	class: "hover:opacity-80",
-	src: config.brandHeaderSrc,
-	alt: config.brandAlt,
-	classImage: "h-10 w-auto",
+	href: "/",
+	src: Logo,
+	alt: "Logo de Mi Librería UI",
+	class: "custom-brand-class",
+	classImage: "h-8 w-auto",
 };
 ---
 
@@ -32,23 +35,19 @@ const brandData = {
 			author={config.author}
 			url={config.url}
 		/>
-		<Favicon favicon={config.favicon} />
+		<Favicon favicon={config.favicon}  />
 	</head>
 
 	<body>
-		<HeaderFixed
-			links={navLinks}
-			brand={brandData}
-			navVariant="default"
-			containerVariant="default"
-		/>
+		<HeaderFixed links={navLinks} brand={brandData} />
 
 		<main class="pt-20">
 			<slot />
 		</main>
 
 		<Footer
-			imageSrc={config.brandFooterSrc}
+			imageSrc={LogoFooter}
+			alt="Logo de Mi Librería UI"
 			legend={config.siteLegend}
 			copyright={`© ${new Date().getFullYear()} ${config.site}. Todos los derechos reservados.`}
 			author={`Creado por ${config.author}`}
