@@ -14,7 +14,8 @@
     "astro": "^5.6.1",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.4"
+    "tailwindcss": "^4.1.4",
+    "tailwindcss-animated": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.1"
